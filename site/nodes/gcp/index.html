@@ -1,0 +1,1044 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>GCP - Diagrams</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ab47bd">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="purple" data-md-color-accent="blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gcpanalytics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Diagrams" class="md-header__button md-logo" aria-label="Diagrams" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diagrams
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              GCP
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Diagrams" class="md-nav__button md-logo" aria-label="Diagrams" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Diagrams
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Nodes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Nodes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Nodes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generic/" class="md-nav__link">
+        Generic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oci/" class="md-nav__link">
+        OCI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../firebase/" class="md-nav__link">
+        Firebase
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../outscale/" class="md-nav__link">
+        Outscale
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alibabacloud/" class="md-nav__link">
+        Alibaba Cloud
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          GCP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        GCP
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gcpanalytics" class="md-nav__link">
+    gcp.analytics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpapi" class="md-nav__link">
+    gcp.api
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpcompute" class="md-nav__link">
+    gcp.compute
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpdatabase" class="md-nav__link">
+    gcp.database
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpdevtools" class="md-nav__link">
+    gcp.devtools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpiot" class="md-nav__link">
+    gcp.iot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpmigration" class="md-nav__link">
+    gcp.migration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpml" class="md-nav__link">
+    gcp.ml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpnetwork" class="md-nav__link">
+    gcp.network
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpoperations" class="md-nav__link">
+    gcp.operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpsecurity" class="md-nav__link">
+    gcp.security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpstorage" class="md-nav__link">
+    gcp.storage
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom/" class="md-nav__link">
+        Custom
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azure/" class="md-nav__link">
+        Azure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../k8s/" class="md-nav__link">
+        Kubernetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ibm/" class="md-nav__link">
+        IBM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../saas/" class="md-nav__link">
+        SAAS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../digitalocean/" class="md-nav__link">
+        Digital Ocean
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws/" class="md-nav__link">
+        AWS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elastic/" class="md-nav__link">
+        Elastic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programming/" class="md-nav__link">
+        Programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../onprem/" class="md-nav__link">
+        On Prem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../openstack/" class="md-nav__link">
+        Openstack
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/cluster/" class="md-nav__link">
+        Cluster
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/edge/" class="md-nav__link">
+        Edge
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/node/" class="md-nav__link">
+        Node
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/diagram/" class="md-nav__link">
+        Diagram
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gcpanalytics" class="md-nav__link">
+    gcp.analytics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpapi" class="md-nav__link">
+    gcp.api
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpcompute" class="md-nav__link">
+    gcp.compute
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpdatabase" class="md-nav__link">
+    gcp.database
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpdevtools" class="md-nav__link">
+    gcp.devtools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpiot" class="md-nav__link">
+    gcp.iot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpmigration" class="md-nav__link">
+    gcp.migration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpml" class="md-nav__link">
+    gcp.ml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpnetwork" class="md-nav__link">
+    gcp.network
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpoperations" class="md-nav__link">
+    gcp.operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpsecurity" class="md-nav__link">
+    gcp.security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcpstorage" class="md-nav__link">
+    gcp.storage
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>GCP</h1>
+
+<p>Node classes list of gcp provider.</p>
+<h2 id="gcpanalytics">gcp.analytics</h2>
+<ul>
+<li><strong>diagrams.gcp.analytics.Bigquery</strong>, <strong>BigQuery</strong> (alias)</li>
+<li><strong>diagrams.gcp.analytics.Composer</strong></li>
+<li><strong>diagrams.gcp.analytics.DataCatalog</strong></li>
+<li><strong>diagrams.gcp.analytics.DataFusion</strong></li>
+<li><strong>diagrams.gcp.analytics.Dataflow</strong></li>
+<li><strong>diagrams.gcp.analytics.Datalab</strong></li>
+<li><strong>diagrams.gcp.analytics.Dataprep</strong></li>
+<li><strong>diagrams.gcp.analytics.Dataproc</strong></li>
+<li><strong>diagrams.gcp.analytics.Genomics</strong></li>
+<li><strong>diagrams.gcp.analytics.Pubsub</strong>, <strong>PubSub</strong> (alias)</li>
+</ul>
+<h2 id="gcpapi">gcp.api</h2>
+<ul>
+<li><strong>diagrams.gcp.api.APIGateway</strong></li>
+<li><strong>diagrams.gcp.api.Endpoints</strong></li>
+</ul>
+<h2 id="gcpcompute">gcp.compute</h2>
+<ul>
+<li><strong>diagrams.gcp.compute.AppEngine</strong>, <strong>GAE</strong> (alias)</li>
+<li><strong>diagrams.gcp.compute.ComputeEngine</strong>, <strong>GCE</strong> (alias)</li>
+<li><strong>diagrams.gcp.compute.ContainerOptimizedOS</strong></li>
+<li><strong>diagrams.gcp.compute.Functions</strong>, <strong>GCF</strong> (alias)</li>
+<li><strong>diagrams.gcp.compute.GKEOnPrem</strong></li>
+<li><strong>diagrams.gcp.compute.GPU</strong></li>
+<li><strong>diagrams.gcp.compute.KubernetesEngine</strong>, <strong>GKE</strong> (alias)</li>
+<li><strong>diagrams.gcp.compute.Run</strong></li>
+</ul>
+<h2 id="gcpdatabase">gcp.database</h2>
+<ul>
+<li><strong>diagrams.gcp.database.Bigtable</strong>, <strong>BigTable</strong> (alias)</li>
+<li><strong>diagrams.gcp.database.Datastore</strong></li>
+<li><strong>diagrams.gcp.database.Firestore</strong></li>
+<li><strong>diagrams.gcp.database.Memorystore</strong></li>
+<li><strong>diagrams.gcp.database.Spanner</strong></li>
+<li><strong>diagrams.gcp.database.SQL</strong></li>
+</ul>
+<h2 id="gcpdevtools">gcp.devtools</h2>
+<ul>
+<li><strong>diagrams.gcp.devtools.Build</strong></li>
+<li><strong>diagrams.gcp.devtools.CodeForIntellij</strong></li>
+<li><strong>diagrams.gcp.devtools.Code</strong></li>
+<li><strong>diagrams.gcp.devtools.ContainerRegistry</strong>, <strong>GCR</strong> (alias)</li>
+<li><strong>diagrams.gcp.devtools.GradleAppEnginePlugin</strong></li>
+<li><strong>diagrams.gcp.devtools.IdePlugins</strong></li>
+<li><strong>diagrams.gcp.devtools.MavenAppEnginePlugin</strong></li>
+<li><strong>diagrams.gcp.devtools.Scheduler</strong></li>
+<li><strong>diagrams.gcp.devtools.SDK</strong></li>
+<li><strong>diagrams.gcp.devtools.SourceRepositories</strong></li>
+<li><strong>diagrams.gcp.devtools.Tasks</strong></li>
+<li><strong>diagrams.gcp.devtools.TestLab</strong></li>
+<li><strong>diagrams.gcp.devtools.ToolsForEclipse</strong></li>
+<li><strong>diagrams.gcp.devtools.ToolsForPowershell</strong></li>
+<li><strong>diagrams.gcp.devtools.ToolsForVisualStudio</strong></li>
+</ul>
+<h2 id="gcpiot">gcp.iot</h2>
+<ul>
+<li><strong>diagrams.gcp.iot.IotCore</strong></li>
+</ul>
+<h2 id="gcpmigration">gcp.migration</h2>
+<ul>
+<li><strong>diagrams.gcp.migration.TransferAppliance</strong></li>
+</ul>
+<h2 id="gcpml">gcp.ml</h2>
+<ul>
+<li><strong>diagrams.gcp.ml.AdvancedSolutionsLab</strong></li>
+<li><strong>diagrams.gcp.ml.AIHub</strong></li>
+<li><strong>diagrams.gcp.ml.AIPlatformDataLabelingService</strong></li>
+<li><strong>diagrams.gcp.ml.AIPlatform</strong></li>
+<li><strong>diagrams.gcp.ml.AutomlNaturalLanguage</strong></li>
+<li><strong>diagrams.gcp.ml.AutomlTables</strong></li>
+<li><strong>diagrams.gcp.ml.AutomlTranslation</strong></li>
+<li><strong>diagrams.gcp.ml.AutomlVideoIntelligence</strong></li>
+<li><strong>diagrams.gcp.ml.AutomlVision</strong></li>
+<li><strong>diagrams.gcp.ml.Automl</strong>, <strong>AutoML</strong> (alias)</li>
+<li><strong>diagrams.gcp.ml.DialogFlowEnterpriseEdition</strong></li>
+<li><strong>diagrams.gcp.ml.InferenceAPI</strong></li>
+<li><strong>diagrams.gcp.ml.JobsAPI</strong></li>
+<li><strong>diagrams.gcp.ml.NaturalLanguageAPI</strong>, <strong>NLAPI</strong> (alias)</li>
+<li><strong>diagrams.gcp.ml.RecommendationsAI</strong></li>
+<li><strong>diagrams.gcp.ml.SpeechToText</strong>, <strong>STT</strong> (alias)</li>
+<li><strong>diagrams.gcp.ml.TextToSpeech</strong>, <strong>TTS</strong> (alias)</li>
+<li><strong>diagrams.gcp.ml.TPU</strong></li>
+<li><strong>diagrams.gcp.ml.TranslationAPI</strong></li>
+<li><strong>diagrams.gcp.ml.VideoIntelligenceAPI</strong></li>
+<li><strong>diagrams.gcp.ml.VisionAPI</strong></li>
+</ul>
+<h2 id="gcpnetwork">gcp.network</h2>
+<ul>
+<li><strong>diagrams.gcp.network.Armor</strong></li>
+<li><strong>diagrams.gcp.network.CDN</strong></li>
+<li><strong>diagrams.gcp.network.DedicatedInterconnect</strong></li>
+<li><strong>diagrams.gcp.network.DNS</strong></li>
+<li><strong>diagrams.gcp.network.ExternalIpAddresses</strong></li>
+<li><strong>diagrams.gcp.network.FirewallRules</strong></li>
+<li><strong>diagrams.gcp.network.LoadBalancing</strong></li>
+<li><strong>diagrams.gcp.network.NAT</strong></li>
+<li><strong>diagrams.gcp.network.Network</strong></li>
+<li><strong>diagrams.gcp.network.PartnerInterconnect</strong></li>
+<li><strong>diagrams.gcp.network.PremiumNetworkTier</strong></li>
+<li><strong>diagrams.gcp.network.Router</strong></li>
+<li><strong>diagrams.gcp.network.Routes</strong></li>
+<li><strong>diagrams.gcp.network.StandardNetworkTier</strong></li>
+<li><strong>diagrams.gcp.network.TrafficDirector</strong></li>
+<li><strong>diagrams.gcp.network.VirtualPrivateCloud</strong>, <strong>VPC</strong> (alias)</li>
+<li><strong>diagrams.gcp.network.VPN</strong></li>
+</ul>
+<h2 id="gcpoperations">gcp.operations</h2>
+<ul>
+<li><strong>diagrams.gcp.operations.Monitoring</strong></li>
+</ul>
+<h2 id="gcpsecurity">gcp.security</h2>
+<ul>
+<li><strong>diagrams.gcp.security.Iam</strong></li>
+<li><strong>diagrams.gcp.security.IAP</strong></li>
+<li><strong>diagrams.gcp.security.KeyManagementService</strong>, <strong>KMS</strong> (alias)</li>
+<li><strong>diagrams.gcp.security.ResourceManager</strong></li>
+<li><strong>diagrams.gcp.security.SecurityCommandCenter</strong>, <strong>SCC</strong> (alias)</li>
+<li><strong>diagrams.gcp.security.SecurityScanner</strong></li>
+</ul>
+<h2 id="gcpstorage">gcp.storage</h2>
+<ul>
+<li><strong>diagrams.gcp.storage.Filestore</strong></li>
+<li><strong>diagrams.gcp.storage.PersistentDisk</strong></li>
+<li><strong>diagrams.gcp.storage.Storage</strong>, <strong>GCS</strong> (alias)</li>
+</ul>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../alibabacloud/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Alibaba Cloud" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Alibaba Cloud
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../custom/" class="md-footer__link md-footer__link--next" aria-label="Next: Custom" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Custom
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>

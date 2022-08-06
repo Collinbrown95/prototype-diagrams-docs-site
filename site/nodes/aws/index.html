@@ -1,0 +1,1666 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>AWS - Diagrams</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ab47bd">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="purple" data-md-color-accent="blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#awsanalytics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Diagrams" class="md-header__button md-logo" aria-label="Diagrams" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diagrams
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AWS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Diagrams" class="md-nav__button md-logo" aria-label="Diagrams" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Diagrams
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Nodes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Nodes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Nodes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generic/" class="md-nav__link">
+        Generic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oci/" class="md-nav__link">
+        OCI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../firebase/" class="md-nav__link">
+        Firebase
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../outscale/" class="md-nav__link">
+        Outscale
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alibabacloud/" class="md-nav__link">
+        Alibaba Cloud
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gcp/" class="md-nav__link">
+        GCP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom/" class="md-nav__link">
+        Custom
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azure/" class="md-nav__link">
+        Azure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../k8s/" class="md-nav__link">
+        Kubernetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ibm/" class="md-nav__link">
+        IBM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../saas/" class="md-nav__link">
+        SAAS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../digitalocean/" class="md-nav__link">
+        Digital Ocean
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          AWS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        AWS
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#awsanalytics" class="md-nav__link">
+    aws.analytics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsar" class="md-nav__link">
+    aws.ar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsblockchain" class="md-nav__link">
+    aws.blockchain
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsbusiness" class="md-nav__link">
+    aws.business
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awscompute" class="md-nav__link">
+    aws.compute
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awscost" class="md-nav__link">
+    aws.cost
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsdatabase" class="md-nav__link">
+    aws.database
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsdevtools" class="md-nav__link">
+    aws.devtools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsenablement" class="md-nav__link">
+    aws.enablement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsenduser" class="md-nav__link">
+    aws.enduser
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsengagement" class="md-nav__link">
+    aws.engagement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsgame" class="md-nav__link">
+    aws.game
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsgeneral" class="md-nav__link">
+    aws.general
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsintegration" class="md-nav__link">
+    aws.integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsiot" class="md-nav__link">
+    aws.iot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsmanagement" class="md-nav__link">
+    aws.management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsmedia" class="md-nav__link">
+    aws.media
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsmigration" class="md-nav__link">
+    aws.migration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsml" class="md-nav__link">
+    aws.ml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsmobile" class="md-nav__link">
+    aws.mobile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsnetwork" class="md-nav__link">
+    aws.network
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsquantum" class="md-nav__link">
+    aws.quantum
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsrobotics" class="md-nav__link">
+    aws.robotics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awssatellite" class="md-nav__link">
+    aws.satellite
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awssecurity" class="md-nav__link">
+    aws.security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsstorage" class="md-nav__link">
+    aws.storage
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elastic/" class="md-nav__link">
+        Elastic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programming/" class="md-nav__link">
+        Programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../onprem/" class="md-nav__link">
+        On Prem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../openstack/" class="md-nav__link">
+        Openstack
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/cluster/" class="md-nav__link">
+        Cluster
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/edge/" class="md-nav__link">
+        Edge
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/node/" class="md-nav__link">
+        Node
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/diagram/" class="md-nav__link">
+        Diagram
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#awsanalytics" class="md-nav__link">
+    aws.analytics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsar" class="md-nav__link">
+    aws.ar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsblockchain" class="md-nav__link">
+    aws.blockchain
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsbusiness" class="md-nav__link">
+    aws.business
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awscompute" class="md-nav__link">
+    aws.compute
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awscost" class="md-nav__link">
+    aws.cost
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsdatabase" class="md-nav__link">
+    aws.database
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsdevtools" class="md-nav__link">
+    aws.devtools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsenablement" class="md-nav__link">
+    aws.enablement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsenduser" class="md-nav__link">
+    aws.enduser
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsengagement" class="md-nav__link">
+    aws.engagement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsgame" class="md-nav__link">
+    aws.game
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsgeneral" class="md-nav__link">
+    aws.general
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsintegration" class="md-nav__link">
+    aws.integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsiot" class="md-nav__link">
+    aws.iot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsmanagement" class="md-nav__link">
+    aws.management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsmedia" class="md-nav__link">
+    aws.media
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsmigration" class="md-nav__link">
+    aws.migration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsml" class="md-nav__link">
+    aws.ml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsmobile" class="md-nav__link">
+    aws.mobile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsnetwork" class="md-nav__link">
+    aws.network
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsquantum" class="md-nav__link">
+    aws.quantum
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsrobotics" class="md-nav__link">
+    aws.robotics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awssatellite" class="md-nav__link">
+    aws.satellite
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awssecurity" class="md-nav__link">
+    aws.security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awsstorage" class="md-nav__link">
+    aws.storage
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>AWS</h1>
+
+<p>Node classes list of aws provider.</p>
+<h2 id="awsanalytics">aws.analytics</h2>
+<ul>
+<li><strong>diagrams.aws.analytics.Analytics</strong></li>
+<li><strong>diagrams.aws.analytics.Athena</strong></li>
+<li><strong>diagrams.aws.analytics.CloudsearchSearchDocuments</strong></li>
+<li><strong>diagrams.aws.analytics.Cloudsearch</strong></li>
+<li><strong>diagrams.aws.analytics.DataLakeResource</strong></li>
+<li><strong>diagrams.aws.analytics.DataPipeline</strong></li>
+<li><strong>diagrams.aws.analytics.ElasticsearchService</strong>, <strong>ES</strong> (alias)</li>
+<li><strong>diagrams.aws.analytics.EMRCluster</strong></li>
+<li><strong>diagrams.aws.analytics.EMREngineMaprM3</strong></li>
+<li><strong>diagrams.aws.analytics.EMREngineMaprM5</strong></li>
+<li><strong>diagrams.aws.analytics.EMREngineMaprM7</strong></li>
+<li><strong>diagrams.aws.analytics.EMREngine</strong></li>
+<li><strong>diagrams.aws.analytics.EMRHdfsCluster</strong></li>
+<li><strong>diagrams.aws.analytics.EMR</strong></li>
+<li><strong>diagrams.aws.analytics.GlueCrawlers</strong></li>
+<li><strong>diagrams.aws.analytics.GlueDataCatalog</strong></li>
+<li><strong>diagrams.aws.analytics.Glue</strong></li>
+<li><strong>diagrams.aws.analytics.KinesisDataAnalytics</strong></li>
+<li><strong>diagrams.aws.analytics.KinesisDataFirehose</strong></li>
+<li><strong>diagrams.aws.analytics.KinesisDataStreams</strong></li>
+<li><strong>diagrams.aws.analytics.KinesisVideoStreams</strong></li>
+<li><strong>diagrams.aws.analytics.Kinesis</strong></li>
+<li><strong>diagrams.aws.analytics.LakeFormation</strong></li>
+<li><strong>diagrams.aws.analytics.ManagedStreamingForKafka</strong></li>
+<li><strong>diagrams.aws.analytics.Quicksight</strong></li>
+<li><strong>diagrams.aws.analytics.RedshiftDenseComputeNode</strong></li>
+<li><strong>diagrams.aws.analytics.RedshiftDenseStorageNode</strong></li>
+<li><strong>diagrams.aws.analytics.Redshift</strong></li>
+</ul>
+<h2 id="awsar">aws.ar</h2>
+<ul>
+<li><strong>diagrams.aws.ar.ArVr</strong></li>
+<li><strong>diagrams.aws.ar.Sumerian</strong></li>
+</ul>
+<h2 id="awsblockchain">aws.blockchain</h2>
+<ul>
+<li><strong>diagrams.aws.blockchain.BlockchainResource</strong></li>
+<li><strong>diagrams.aws.blockchain.Blockchain</strong></li>
+<li><strong>diagrams.aws.blockchain.ManagedBlockchain</strong></li>
+<li><strong>diagrams.aws.blockchain.QuantumLedgerDatabaseQldb</strong>, <strong>QLDB</strong> (alias)</li>
+</ul>
+<h2 id="awsbusiness">aws.business</h2>
+<ul>
+<li><strong>diagrams.aws.business.AlexaForBusiness</strong>, <strong>A4B</strong> (alias)</li>
+<li><strong>diagrams.aws.business.BusinessApplications</strong></li>
+<li><strong>diagrams.aws.business.Chime</strong></li>
+<li><strong>diagrams.aws.business.Workmail</strong></li>
+</ul>
+<h2 id="awscompute">aws.compute</h2>
+<ul>
+<li><strong>diagrams.aws.compute.ApplicationAutoScaling</strong>, <strong>AutoScaling</strong> (alias)</li>
+<li><strong>diagrams.aws.compute.Batch</strong></li>
+<li><strong>diagrams.aws.compute.ComputeOptimizer</strong></li>
+<li><strong>diagrams.aws.compute.Compute</strong></li>
+<li><strong>diagrams.aws.compute.EC2Ami</strong>, <strong>AMI</strong> (alias)</li>
+<li><strong>diagrams.aws.compute.EC2AutoScaling</strong></li>
+<li><strong>diagrams.aws.compute.EC2ContainerRegistryImage</strong></li>
+<li><strong>diagrams.aws.compute.EC2ContainerRegistryRegistry</strong></li>
+<li><strong>diagrams.aws.compute.EC2ContainerRegistry</strong>, <strong>ECR</strong> (alias)</li>
+<li><strong>diagrams.aws.compute.EC2ElasticIpAddress</strong></li>
+<li><strong>diagrams.aws.compute.EC2ImageBuilder</strong></li>
+<li><strong>diagrams.aws.compute.EC2Instance</strong></li>
+<li><strong>diagrams.aws.compute.EC2Instances</strong></li>
+<li><strong>diagrams.aws.compute.EC2Rescue</strong></li>
+<li><strong>diagrams.aws.compute.EC2SpotInstance</strong></li>
+<li><strong>diagrams.aws.compute.EC2</strong></li>
+<li><strong>diagrams.aws.compute.ElasticBeanstalkApplication</strong></li>
+<li><strong>diagrams.aws.compute.ElasticBeanstalkDeployment</strong></li>
+<li><strong>diagrams.aws.compute.ElasticBeanstalk</strong>, <strong>EB</strong> (alias)</li>
+<li><strong>diagrams.aws.compute.ElasticContainerServiceContainer</strong></li>
+<li><strong>diagrams.aws.compute.ElasticContainerServiceService</strong></li>
+<li><strong>diagrams.aws.compute.ElasticContainerService</strong>, <strong>ECS</strong> (alias)</li>
+<li><strong>diagrams.aws.compute.ElasticKubernetesService</strong>, <strong>EKS</strong> (alias)</li>
+<li><strong>diagrams.aws.compute.Fargate</strong></li>
+<li><strong>diagrams.aws.compute.LambdaFunction</strong></li>
+<li><strong>diagrams.aws.compute.Lambda</strong></li>
+<li><strong>diagrams.aws.compute.Lightsail</strong></li>
+<li><strong>diagrams.aws.compute.LocalZones</strong></li>
+<li><strong>diagrams.aws.compute.Outposts</strong></li>
+<li><strong>diagrams.aws.compute.ServerlessApplicationRepository</strong>, <strong>SAR</strong> (alias)</li>
+<li><strong>diagrams.aws.compute.ThinkboxDeadline</strong></li>
+<li><strong>diagrams.aws.compute.ThinkboxDraft</strong></li>
+<li><strong>diagrams.aws.compute.ThinkboxFrost</strong></li>
+<li><strong>diagrams.aws.compute.ThinkboxKrakatoa</strong></li>
+<li><strong>diagrams.aws.compute.ThinkboxSequoia</strong></li>
+<li><strong>diagrams.aws.compute.ThinkboxStoke</strong></li>
+<li><strong>diagrams.aws.compute.ThinkboxXmesh</strong></li>
+<li><strong>diagrams.aws.compute.VmwareCloudOnAWS</strong></li>
+<li><strong>diagrams.aws.compute.Wavelength</strong></li>
+</ul>
+<h2 id="awscost">aws.cost</h2>
+<ul>
+<li><strong>diagrams.aws.cost.Budgets</strong></li>
+<li><strong>diagrams.aws.cost.CostAndUsageReport</strong></li>
+<li><strong>diagrams.aws.cost.CostExplorer</strong></li>
+<li><strong>diagrams.aws.cost.CostManagement</strong></li>
+<li><strong>diagrams.aws.cost.ReservedInstanceReporting</strong></li>
+<li><strong>diagrams.aws.cost.SavingsPlans</strong></li>
+</ul>
+<h2 id="awsdatabase">aws.database</h2>
+<ul>
+<li><strong>diagrams.aws.database.AuroraInstance</strong></li>
+<li><strong>diagrams.aws.database.Aurora</strong></li>
+<li><strong>diagrams.aws.database.DatabaseMigrationServiceDatabaseMigrationWorkflow</strong></li>
+<li><strong>diagrams.aws.database.DatabaseMigrationService</strong>, <strong>DMS</strong> (alias)</li>
+<li><strong>diagrams.aws.database.Database</strong>, <strong>DB</strong> (alias)</li>
+<li><strong>diagrams.aws.database.DocumentdbMongodbCompatibility</strong>, <strong>DocumentDB</strong> (alias)</li>
+<li><strong>diagrams.aws.database.DynamodbAttribute</strong></li>
+<li><strong>diagrams.aws.database.DynamodbAttributes</strong></li>
+<li><strong>diagrams.aws.database.DynamodbDax</strong>, <strong>DAX</strong> (alias)</li>
+<li><strong>diagrams.aws.database.DynamodbGlobalSecondaryIndex</strong>, <strong>DynamodbGSI</strong> (alias)</li>
+<li><strong>diagrams.aws.database.DynamodbItem</strong></li>
+<li><strong>diagrams.aws.database.DynamodbItems</strong></li>
+<li><strong>diagrams.aws.database.DynamodbTable</strong></li>
+<li><strong>diagrams.aws.database.Dynamodb</strong>, <strong>DDB</strong> (alias)</li>
+<li><strong>diagrams.aws.database.ElasticacheCacheNode</strong></li>
+<li><strong>diagrams.aws.database.ElasticacheForMemcached</strong></li>
+<li><strong>diagrams.aws.database.ElasticacheForRedis</strong></li>
+<li><strong>diagrams.aws.database.Elasticache</strong>, <strong>ElastiCache</strong> (alias)</li>
+<li><strong>diagrams.aws.database.KeyspacesManagedApacheCassandraService</strong></li>
+<li><strong>diagrams.aws.database.Neptune</strong></li>
+<li><strong>diagrams.aws.database.QuantumLedgerDatabaseQldb</strong>, <strong>QLDB</strong> (alias)</li>
+<li><strong>diagrams.aws.database.RDSInstance</strong></li>
+<li><strong>diagrams.aws.database.RDSMariadbInstance</strong></li>
+<li><strong>diagrams.aws.database.RDSMysqlInstance</strong></li>
+<li><strong>diagrams.aws.database.RDSOnVmware</strong></li>
+<li><strong>diagrams.aws.database.RDSOracleInstance</strong></li>
+<li><strong>diagrams.aws.database.RDSPostgresqlInstance</strong></li>
+<li><strong>diagrams.aws.database.RDSSqlServerInstance</strong></li>
+<li><strong>diagrams.aws.database.RDS</strong></li>
+<li><strong>diagrams.aws.database.RedshiftDenseComputeNode</strong></li>
+<li><strong>diagrams.aws.database.RedshiftDenseStorageNode</strong></li>
+<li><strong>diagrams.aws.database.Redshift</strong></li>
+<li><strong>diagrams.aws.database.Timestream</strong></li>
+</ul>
+<h2 id="awsdevtools">aws.devtools</h2>
+<ul>
+<li><strong>diagrams.aws.devtools.CloudDevelopmentKit</strong></li>
+<li><strong>diagrams.aws.devtools.Cloud9Resource</strong></li>
+<li><strong>diagrams.aws.devtools.Cloud9</strong></li>
+<li><strong>diagrams.aws.devtools.Codebuild</strong></li>
+<li><strong>diagrams.aws.devtools.Codecommit</strong></li>
+<li><strong>diagrams.aws.devtools.Codedeploy</strong></li>
+<li><strong>diagrams.aws.devtools.Codepipeline</strong></li>
+<li><strong>diagrams.aws.devtools.Codestar</strong></li>
+<li><strong>diagrams.aws.devtools.CommandLineInterface</strong>, <strong>CLI</strong> (alias)</li>
+<li><strong>diagrams.aws.devtools.DeveloperTools</strong>, <strong>DevTools</strong> (alias)</li>
+<li><strong>diagrams.aws.devtools.ToolsAndSdks</strong></li>
+<li><strong>diagrams.aws.devtools.XRay</strong></li>
+</ul>
+<h2 id="awsenablement">aws.enablement</h2>
+<ul>
+<li><strong>diagrams.aws.enablement.CustomerEnablement</strong></li>
+<li><strong>diagrams.aws.enablement.Iq</strong></li>
+<li><strong>diagrams.aws.enablement.ManagedServices</strong></li>
+<li><strong>diagrams.aws.enablement.ProfessionalServices</strong></li>
+<li><strong>diagrams.aws.enablement.Support</strong></li>
+</ul>
+<h2 id="awsenduser">aws.enduser</h2>
+<ul>
+<li><strong>diagrams.aws.enduser.Appstream20</strong></li>
+<li><strong>diagrams.aws.enduser.DesktopAndAppStreaming</strong></li>
+<li><strong>diagrams.aws.enduser.Workdocs</strong></li>
+<li><strong>diagrams.aws.enduser.Worklink</strong></li>
+<li><strong>diagrams.aws.enduser.Workspaces</strong></li>
+</ul>
+<h2 id="awsengagement">aws.engagement</h2>
+<ul>
+<li><strong>diagrams.aws.engagement.Connect</strong></li>
+<li><strong>diagrams.aws.engagement.CustomerEngagement</strong></li>
+<li><strong>diagrams.aws.engagement.Pinpoint</strong></li>
+<li><strong>diagrams.aws.engagement.SimpleEmailServiceSesEmail</strong></li>
+<li><strong>diagrams.aws.engagement.SimpleEmailServiceSes</strong>, <strong>SES</strong> (alias)</li>
+</ul>
+<h2 id="awsgame">aws.game</h2>
+<ul>
+<li><strong>diagrams.aws.game.GameTech</strong></li>
+<li><strong>diagrams.aws.game.Gamelift</strong></li>
+</ul>
+<h2 id="awsgeneral">aws.general</h2>
+<ul>
+<li><strong>diagrams.aws.general.Client</strong></li>
+<li><strong>diagrams.aws.general.Disk</strong></li>
+<li><strong>diagrams.aws.general.Forums</strong></li>
+<li><strong>diagrams.aws.general.General</strong></li>
+<li><strong>diagrams.aws.general.GenericDatabase</strong></li>
+<li><strong>diagrams.aws.general.GenericFirewall</strong></li>
+<li><strong>diagrams.aws.general.GenericOfficeBuilding</strong>, <strong>OfficeBuilding</strong> (alias)</li>
+<li><strong>diagrams.aws.general.GenericSamlToken</strong></li>
+<li><strong>diagrams.aws.general.GenericSDK</strong></li>
+<li><strong>diagrams.aws.general.InternetAlt1</strong></li>
+<li><strong>diagrams.aws.general.InternetAlt2</strong></li>
+<li><strong>diagrams.aws.general.InternetGateway</strong></li>
+<li><strong>diagrams.aws.general.Marketplace</strong></li>
+<li><strong>diagrams.aws.general.MobileClient</strong></li>
+<li><strong>diagrams.aws.general.Multimedia</strong></li>
+<li><strong>diagrams.aws.general.OfficeBuilding</strong></li>
+<li><strong>diagrams.aws.general.SamlToken</strong></li>
+<li><strong>diagrams.aws.general.SDK</strong></li>
+<li><strong>diagrams.aws.general.SslPadlock</strong></li>
+<li><strong>diagrams.aws.general.TapeStorage</strong></li>
+<li><strong>diagrams.aws.general.Toolkit</strong></li>
+<li><strong>diagrams.aws.general.TraditionalServer</strong></li>
+<li><strong>diagrams.aws.general.User</strong></li>
+<li><strong>diagrams.aws.general.Users</strong></li>
+</ul>
+<h2 id="awsintegration">aws.integration</h2>
+<ul>
+<li><strong>diagrams.aws.integration.ApplicationIntegration</strong></li>
+<li><strong>diagrams.aws.integration.Appsync</strong></li>
+<li><strong>diagrams.aws.integration.ConsoleMobileApplication</strong></li>
+<li><strong>diagrams.aws.integration.EventResource</strong></li>
+<li><strong>diagrams.aws.integration.EventbridgeCustomEventBusResource</strong></li>
+<li><strong>diagrams.aws.integration.EventbridgeDefaultEventBusResource</strong></li>
+<li><strong>diagrams.aws.integration.EventbridgeSaasPartnerEventBusResource</strong></li>
+<li><strong>diagrams.aws.integration.Eventbridge</strong></li>
+<li><strong>diagrams.aws.integration.ExpressWorkflows</strong></li>
+<li><strong>diagrams.aws.integration.MQ</strong></li>
+<li><strong>diagrams.aws.integration.SimpleNotificationServiceSnsEmailNotification</strong></li>
+<li><strong>diagrams.aws.integration.SimpleNotificationServiceSnsHttpNotification</strong></li>
+<li><strong>diagrams.aws.integration.SimpleNotificationServiceSnsTopic</strong></li>
+<li><strong>diagrams.aws.integration.SimpleNotificationServiceSns</strong>, <strong>SNS</strong> (alias)</li>
+<li><strong>diagrams.aws.integration.SimpleQueueServiceSqsMessage</strong></li>
+<li><strong>diagrams.aws.integration.SimpleQueueServiceSqsQueue</strong></li>
+<li><strong>diagrams.aws.integration.SimpleQueueServiceSqs</strong>, <strong>SQS</strong> (alias)</li>
+<li><strong>diagrams.aws.integration.StepFunctions</strong>, <strong>SF</strong> (alias)</li>
+</ul>
+<h2 id="awsiot">aws.iot</h2>
+<ul>
+<li><strong>diagrams.aws.iot.Freertos</strong>, <strong>FreeRTOS</strong> (alias)</li>
+<li><strong>diagrams.aws.iot.InternetOfThings</strong></li>
+<li><strong>diagrams.aws.iot.Iot1Click</strong></li>
+<li><strong>diagrams.aws.iot.IotAction</strong></li>
+<li><strong>diagrams.aws.iot.IotActuator</strong></li>
+<li><strong>diagrams.aws.iot.IotAlexaEcho</strong></li>
+<li><strong>diagrams.aws.iot.IotAlexaEnabledDevice</strong></li>
+<li><strong>diagrams.aws.iot.IotAlexaSkill</strong></li>
+<li><strong>diagrams.aws.iot.IotAlexaVoiceService</strong></li>
+<li><strong>diagrams.aws.iot.IotAnalyticsChannel</strong></li>
+<li><strong>diagrams.aws.iot.IotAnalyticsDataSet</strong></li>
+<li><strong>diagrams.aws.iot.IotAnalyticsDataStore</strong></li>
+<li><strong>diagrams.aws.iot.IotAnalyticsNotebook</strong></li>
+<li><strong>diagrams.aws.iot.IotAnalyticsPipeline</strong></li>
+<li><strong>diagrams.aws.iot.IotAnalytics</strong></li>
+<li><strong>diagrams.aws.iot.IotBank</strong></li>
+<li><strong>diagrams.aws.iot.IotBicycle</strong></li>
+<li><strong>diagrams.aws.iot.IotButton</strong></li>
+<li><strong>diagrams.aws.iot.IotCamera</strong></li>
+<li><strong>diagrams.aws.iot.IotCar</strong></li>
+<li><strong>diagrams.aws.iot.IotCart</strong></li>
+<li><strong>diagrams.aws.iot.IotCertificate</strong></li>
+<li><strong>diagrams.aws.iot.IotCoffeePot</strong></li>
+<li><strong>diagrams.aws.iot.IotCore</strong></li>
+<li><strong>diagrams.aws.iot.IotDesiredState</strong></li>
+<li><strong>diagrams.aws.iot.IotDeviceDefender</strong></li>
+<li><strong>diagrams.aws.iot.IotDeviceGateway</strong></li>
+<li><strong>diagrams.aws.iot.IotDeviceManagement</strong></li>
+<li><strong>diagrams.aws.iot.IotDoorLock</strong></li>
+<li><strong>diagrams.aws.iot.IotEvents</strong></li>
+<li><strong>diagrams.aws.iot.IotFactory</strong></li>
+<li><strong>diagrams.aws.iot.IotFireTvStick</strong></li>
+<li><strong>diagrams.aws.iot.IotFireTv</strong></li>
+<li><strong>diagrams.aws.iot.IotGeneric</strong></li>
+<li><strong>diagrams.aws.iot.IotGreengrassConnector</strong></li>
+<li><strong>diagrams.aws.iot.IotGreengrass</strong></li>
+<li><strong>diagrams.aws.iot.IotHardwareBoard</strong>, <strong>IotBoard</strong> (alias)</li>
+<li><strong>diagrams.aws.iot.IotHouse</strong></li>
+<li><strong>diagrams.aws.iot.IotHttp</strong></li>
+<li><strong>diagrams.aws.iot.IotHttp2</strong></li>
+<li><strong>diagrams.aws.iot.IotJobs</strong></li>
+<li><strong>diagrams.aws.iot.IotLambda</strong></li>
+<li><strong>diagrams.aws.iot.IotLightbulb</strong></li>
+<li><strong>diagrams.aws.iot.IotMedicalEmergency</strong></li>
+<li><strong>diagrams.aws.iot.IotMqtt</strong></li>
+<li><strong>diagrams.aws.iot.IotOverTheAirUpdate</strong></li>
+<li><strong>diagrams.aws.iot.IotPolicyEmergency</strong></li>
+<li><strong>diagrams.aws.iot.IotPolicy</strong></li>
+<li><strong>diagrams.aws.iot.IotReportedState</strong></li>
+<li><strong>diagrams.aws.iot.IotRule</strong></li>
+<li><strong>diagrams.aws.iot.IotSensor</strong></li>
+<li><strong>diagrams.aws.iot.IotServo</strong></li>
+<li><strong>diagrams.aws.iot.IotShadow</strong></li>
+<li><strong>diagrams.aws.iot.IotSimulator</strong></li>
+<li><strong>diagrams.aws.iot.IotSitewise</strong></li>
+<li><strong>diagrams.aws.iot.IotThermostat</strong></li>
+<li><strong>diagrams.aws.iot.IotThingsGraph</strong></li>
+<li><strong>diagrams.aws.iot.IotTopic</strong></li>
+<li><strong>diagrams.aws.iot.IotTravel</strong></li>
+<li><strong>diagrams.aws.iot.IotUtility</strong></li>
+<li><strong>diagrams.aws.iot.IotWindfarm</strong></li>
+</ul>
+<h2 id="awsmanagement">aws.management</h2>
+<ul>
+<li><strong>diagrams.aws.management.AutoScaling</strong></li>
+<li><strong>diagrams.aws.management.Chatbot</strong></li>
+<li><strong>diagrams.aws.management.CloudformationChangeSet</strong></li>
+<li><strong>diagrams.aws.management.CloudformationStack</strong></li>
+<li><strong>diagrams.aws.management.CloudformationTemplate</strong></li>
+<li><strong>diagrams.aws.management.Cloudformation</strong></li>
+<li><strong>diagrams.aws.management.Cloudtrail</strong></li>
+<li><strong>diagrams.aws.management.CloudwatchAlarm</strong></li>
+<li><strong>diagrams.aws.management.CloudwatchEventEventBased</strong></li>
+<li><strong>diagrams.aws.management.CloudwatchEventTimeBased</strong></li>
+<li><strong>diagrams.aws.management.CloudwatchRule</strong></li>
+<li><strong>diagrams.aws.management.Cloudwatch</strong></li>
+<li><strong>diagrams.aws.management.Codeguru</strong></li>
+<li><strong>diagrams.aws.management.CommandLineInterface</strong></li>
+<li><strong>diagrams.aws.management.Config</strong></li>
+<li><strong>diagrams.aws.management.ControlTower</strong></li>
+<li><strong>diagrams.aws.management.LicenseManager</strong></li>
+<li><strong>diagrams.aws.management.ManagedServices</strong></li>
+<li><strong>diagrams.aws.management.ManagementAndGovernance</strong></li>
+<li><strong>diagrams.aws.management.ManagementConsole</strong></li>
+<li><strong>diagrams.aws.management.OpsworksApps</strong></li>
+<li><strong>diagrams.aws.management.OpsworksDeployments</strong></li>
+<li><strong>diagrams.aws.management.OpsworksInstances</strong></li>
+<li><strong>diagrams.aws.management.OpsworksLayers</strong></li>
+<li><strong>diagrams.aws.management.OpsworksMonitoring</strong></li>
+<li><strong>diagrams.aws.management.OpsworksPermissions</strong></li>
+<li><strong>diagrams.aws.management.OpsworksResources</strong></li>
+<li><strong>diagrams.aws.management.OpsworksStack</strong></li>
+<li><strong>diagrams.aws.management.Opsworks</strong></li>
+<li><strong>diagrams.aws.management.OrganizationsAccount</strong></li>
+<li><strong>diagrams.aws.management.OrganizationsOrganizationalUnit</strong></li>
+<li><strong>diagrams.aws.management.Organizations</strong></li>
+<li><strong>diagrams.aws.management.PersonalHealthDashboard</strong></li>
+<li><strong>diagrams.aws.management.ServiceCatalog</strong></li>
+<li><strong>diagrams.aws.management.SystemsManagerAutomation</strong></li>
+<li><strong>diagrams.aws.management.SystemsManagerDocuments</strong></li>
+<li><strong>diagrams.aws.management.SystemsManagerInventory</strong></li>
+<li><strong>diagrams.aws.management.SystemsManagerMaintenanceWindows</strong></li>
+<li><strong>diagrams.aws.management.SystemsManagerOpscenter</strong></li>
+<li><strong>diagrams.aws.management.SystemsManagerParameterStore</strong>, <strong>ParameterStore</strong> (alias)</li>
+<li><strong>diagrams.aws.management.SystemsManagerPatchManager</strong></li>
+<li><strong>diagrams.aws.management.SystemsManagerRunCommand</strong></li>
+<li><strong>diagrams.aws.management.SystemsManagerStateManager</strong></li>
+<li><strong>diagrams.aws.management.SystemsManager</strong>, <strong>SSM</strong> (alias)</li>
+<li><strong>diagrams.aws.management.TrustedAdvisorChecklistCost</strong></li>
+<li><strong>diagrams.aws.management.TrustedAdvisorChecklistFaultTolerant</strong></li>
+<li><strong>diagrams.aws.management.TrustedAdvisorChecklistPerformance</strong></li>
+<li><strong>diagrams.aws.management.TrustedAdvisorChecklistSecurity</strong></li>
+<li><strong>diagrams.aws.management.TrustedAdvisorChecklist</strong></li>
+<li><strong>diagrams.aws.management.TrustedAdvisor</strong></li>
+<li><strong>diagrams.aws.management.WellArchitectedTool</strong></li>
+</ul>
+<h2 id="awsmedia">aws.media</h2>
+<ul>
+<li><strong>diagrams.aws.media.ElasticTranscoder</strong></li>
+<li><strong>diagrams.aws.media.ElementalConductor</strong></li>
+<li><strong>diagrams.aws.media.ElementalDelta</strong></li>
+<li><strong>diagrams.aws.media.ElementalLive</strong></li>
+<li><strong>diagrams.aws.media.ElementalMediaconnect</strong></li>
+<li><strong>diagrams.aws.media.ElementalMediaconvert</strong></li>
+<li><strong>diagrams.aws.media.ElementalMedialive</strong></li>
+<li><strong>diagrams.aws.media.ElementalMediapackage</strong></li>
+<li><strong>diagrams.aws.media.ElementalMediastore</strong></li>
+<li><strong>diagrams.aws.media.ElementalMediatailor</strong></li>
+<li><strong>diagrams.aws.media.ElementalServer</strong></li>
+<li><strong>diagrams.aws.media.KinesisVideoStreams</strong></li>
+<li><strong>diagrams.aws.media.MediaServices</strong></li>
+</ul>
+<h2 id="awsmigration">aws.migration</h2>
+<ul>
+<li><strong>diagrams.aws.migration.ApplicationDiscoveryService</strong>, <strong>ADS</strong> (alias)</li>
+<li><strong>diagrams.aws.migration.CloudendureMigration</strong>, <strong>CEM</strong> (alias)</li>
+<li><strong>diagrams.aws.migration.DatabaseMigrationService</strong>, <strong>DMS</strong> (alias)</li>
+<li><strong>diagrams.aws.migration.DatasyncAgent</strong></li>
+<li><strong>diagrams.aws.migration.Datasync</strong></li>
+<li><strong>diagrams.aws.migration.MigrationAndTransfer</strong>, <strong>MAT</strong> (alias)</li>
+<li><strong>diagrams.aws.migration.MigrationHub</strong></li>
+<li><strong>diagrams.aws.migration.ServerMigrationService</strong>, <strong>SMS</strong> (alias)</li>
+<li><strong>diagrams.aws.migration.SnowballEdge</strong></li>
+<li><strong>diagrams.aws.migration.Snowball</strong></li>
+<li><strong>diagrams.aws.migration.Snowmobile</strong></li>
+<li><strong>diagrams.aws.migration.TransferForSftp</strong></li>
+</ul>
+<h2 id="awsml">aws.ml</h2>
+<ul>
+<li><strong>diagrams.aws.ml.ApacheMxnetOnAWS</strong></li>
+<li><strong>diagrams.aws.ml.AugmentedAi</strong></li>
+<li><strong>diagrams.aws.ml.Comprehend</strong></li>
+<li><strong>diagrams.aws.ml.DeepLearningAmis</strong></li>
+<li><strong>diagrams.aws.ml.DeepLearningContainers</strong>, <strong>DLC</strong> (alias)</li>
+<li><strong>diagrams.aws.ml.Deepcomposer</strong></li>
+<li><strong>diagrams.aws.ml.Deeplens</strong></li>
+<li><strong>diagrams.aws.ml.Deepracer</strong></li>
+<li><strong>diagrams.aws.ml.ElasticInference</strong></li>
+<li><strong>diagrams.aws.ml.Forecast</strong></li>
+<li><strong>diagrams.aws.ml.FraudDetector</strong></li>
+<li><strong>diagrams.aws.ml.Kendra</strong></li>
+<li><strong>diagrams.aws.ml.Lex</strong></li>
+<li><strong>diagrams.aws.ml.MachineLearning</strong></li>
+<li><strong>diagrams.aws.ml.Personalize</strong></li>
+<li><strong>diagrams.aws.ml.Polly</strong></li>
+<li><strong>diagrams.aws.ml.RekognitionImage</strong></li>
+<li><strong>diagrams.aws.ml.RekognitionVideo</strong></li>
+<li><strong>diagrams.aws.ml.Rekognition</strong></li>
+<li><strong>diagrams.aws.ml.SagemakerGroundTruth</strong></li>
+<li><strong>diagrams.aws.ml.SagemakerModel</strong></li>
+<li><strong>diagrams.aws.ml.SagemakerNotebook</strong></li>
+<li><strong>diagrams.aws.ml.SagemakerTrainingJob</strong></li>
+<li><strong>diagrams.aws.ml.Sagemaker</strong></li>
+<li><strong>diagrams.aws.ml.TensorflowOnAWS</strong></li>
+<li><strong>diagrams.aws.ml.Textract</strong></li>
+<li><strong>diagrams.aws.ml.Transcribe</strong></li>
+<li><strong>diagrams.aws.ml.Translate</strong></li>
+</ul>
+<h2 id="awsmobile">aws.mobile</h2>
+<ul>
+<li><strong>diagrams.aws.mobile.Amplify</strong></li>
+<li><strong>diagrams.aws.mobile.APIGatewayEndpoint</strong></li>
+<li><strong>diagrams.aws.mobile.APIGateway</strong></li>
+<li><strong>diagrams.aws.mobile.Appsync</strong></li>
+<li><strong>diagrams.aws.mobile.DeviceFarm</strong></li>
+<li><strong>diagrams.aws.mobile.Mobile</strong></li>
+<li><strong>diagrams.aws.mobile.Pinpoint</strong></li>
+</ul>
+<h2 id="awsnetwork">aws.network</h2>
+<ul>
+<li><strong>diagrams.aws.network.APIGatewayEndpoint</strong></li>
+<li><strong>diagrams.aws.network.APIGateway</strong></li>
+<li><strong>diagrams.aws.network.AppMesh</strong></li>
+<li><strong>diagrams.aws.network.ClientVpn</strong></li>
+<li><strong>diagrams.aws.network.CloudMap</strong></li>
+<li><strong>diagrams.aws.network.CloudFrontDownloadDistribution</strong></li>
+<li><strong>diagrams.aws.network.CloudFrontEdgeLocation</strong></li>
+<li><strong>diagrams.aws.network.CloudFrontStreamingDistribution</strong></li>
+<li><strong>diagrams.aws.network.CloudFront</strong>, <strong>CF</strong> (alias)</li>
+<li><strong>diagrams.aws.network.DirectConnect</strong></li>
+<li><strong>diagrams.aws.network.ElasticLoadBalancing</strong>, <strong>ELB</strong> (alias)</li>
+<li><strong>diagrams.aws.network.ElbApplicationLoadBalancer</strong>, <strong>ALB</strong> (alias)</li>
+<li><strong>diagrams.aws.network.ElbClassicLoadBalancer</strong>, <strong>CLB</strong> (alias)</li>
+<li><strong>diagrams.aws.network.ElbNetworkLoadBalancer</strong>, <strong>NLB</strong> (alias)</li>
+<li><strong>diagrams.aws.network.Endpoint</strong></li>
+<li><strong>diagrams.aws.network.GlobalAccelerator</strong>, <strong>GAX</strong> (alias)</li>
+<li><strong>diagrams.aws.network.InternetGateway</strong></li>
+<li><strong>diagrams.aws.network.Nacl</strong></li>
+<li><strong>diagrams.aws.network.NATGateway</strong></li>
+<li><strong>diagrams.aws.network.NetworkingAndContentDelivery</strong></li>
+<li><strong>diagrams.aws.network.PrivateSubnet</strong></li>
+<li><strong>diagrams.aws.network.Privatelink</strong></li>
+<li><strong>diagrams.aws.network.PublicSubnet</strong></li>
+<li><strong>diagrams.aws.network.Route53HostedZone</strong></li>
+<li><strong>diagrams.aws.network.Route53</strong></li>
+<li><strong>diagrams.aws.network.RouteTable</strong></li>
+<li><strong>diagrams.aws.network.SiteToSiteVpn</strong></li>
+<li><strong>diagrams.aws.network.TransitGateway</strong></li>
+<li><strong>diagrams.aws.network.VPCCustomerGateway</strong></li>
+<li><strong>diagrams.aws.network.VPCElasticNetworkAdapter</strong></li>
+<li><strong>diagrams.aws.network.VPCElasticNetworkInterface</strong></li>
+<li><strong>diagrams.aws.network.VPCFlowLogs</strong></li>
+<li><strong>diagrams.aws.network.VPCPeering</strong></li>
+<li><strong>diagrams.aws.network.VPCRouter</strong></li>
+<li><strong>diagrams.aws.network.VPCTrafficMirroring</strong></li>
+<li><strong>diagrams.aws.network.VPC</strong></li>
+<li><strong>diagrams.aws.network.VpnConnection</strong></li>
+<li><strong>diagrams.aws.network.VpnGateway</strong></li>
+</ul>
+<h2 id="awsquantum">aws.quantum</h2>
+<ul>
+<li><strong>diagrams.aws.quantum.Braket</strong></li>
+<li><strong>diagrams.aws.quantum.QuantumTechnologies</strong></li>
+</ul>
+<h2 id="awsrobotics">aws.robotics</h2>
+<ul>
+<li><strong>diagrams.aws.robotics.RobomakerCloudExtensionRos</strong></li>
+<li><strong>diagrams.aws.robotics.RobomakerDevelopmentEnvironment</strong></li>
+<li><strong>diagrams.aws.robotics.RobomakerFleetManagement</strong></li>
+<li><strong>diagrams.aws.robotics.RobomakerSimulator</strong></li>
+<li><strong>diagrams.aws.robotics.Robomaker</strong></li>
+<li><strong>diagrams.aws.robotics.Robotics</strong></li>
+</ul>
+<h2 id="awssatellite">aws.satellite</h2>
+<ul>
+<li><strong>diagrams.aws.satellite.GroundStation</strong></li>
+<li><strong>diagrams.aws.satellite.Satellite</strong></li>
+</ul>
+<h2 id="awssecurity">aws.security</h2>
+<ul>
+<li><strong>diagrams.aws.security.AdConnector</strong></li>
+<li><strong>diagrams.aws.security.Artifact</strong></li>
+<li><strong>diagrams.aws.security.CertificateAuthority</strong></li>
+<li><strong>diagrams.aws.security.CertificateManager</strong>, <strong>ACM</strong> (alias)</li>
+<li><strong>diagrams.aws.security.CloudDirectory</strong></li>
+<li><strong>diagrams.aws.security.Cloudhsm</strong>, <strong>CloudHSM</strong> (alias)</li>
+<li><strong>diagrams.aws.security.Cognito</strong></li>
+<li><strong>diagrams.aws.security.Detective</strong></li>
+<li><strong>diagrams.aws.security.DirectoryService</strong>, <strong>DS</strong> (alias)</li>
+<li><strong>diagrams.aws.security.FirewallManager</strong>, <strong>FMS</strong> (alias)</li>
+<li><strong>diagrams.aws.security.Guardduty</strong></li>
+<li><strong>diagrams.aws.security.IdentityAndAccessManagementIamAccessAnalyzer</strong>, <strong>IAMAccessAnalyzer</strong> (alias)</li>
+<li><strong>diagrams.aws.security.IdentityAndAccessManagementIamAddOn</strong></li>
+<li><strong>diagrams.aws.security.IdentityAndAccessManagementIamAWSStsAlternate</strong></li>
+<li><strong>diagrams.aws.security.IdentityAndAccessManagementIamAWSSts</strong>, <strong>IAMAWSSts</strong> (alias)</li>
+<li><strong>diagrams.aws.security.IdentityAndAccessManagementIamDataEncryptionKey</strong></li>
+<li><strong>diagrams.aws.security.IdentityAndAccessManagementIamEncryptedData</strong></li>
+<li><strong>diagrams.aws.security.IdentityAndAccessManagementIamLongTermSecurityCredential</strong></li>
+<li><strong>diagrams.aws.security.IdentityAndAccessManagementIamMfaToken</strong></li>
+<li><strong>diagrams.aws.security.IdentityAndAccessManagementIamPermissions</strong>, <strong>IAMPermissions</strong> (alias)</li>
+<li><strong>diagrams.aws.security.IdentityAndAccessManagementIamRole</strong>, <strong>IAMRole</strong> (alias)</li>
+<li><strong>diagrams.aws.security.IdentityAndAccessManagementIamTemporarySecurityCredential</strong></li>
+<li><strong>diagrams.aws.security.IdentityAndAccessManagementIam</strong>, <strong>IAM</strong> (alias)</li>
+<li><strong>diagrams.aws.security.InspectorAgent</strong></li>
+<li><strong>diagrams.aws.security.Inspector</strong></li>
+<li><strong>diagrams.aws.security.KeyManagementService</strong>, <strong>KMS</strong> (alias)</li>
+<li><strong>diagrams.aws.security.Macie</strong></li>
+<li><strong>diagrams.aws.security.ManagedMicrosoftAd</strong></li>
+<li><strong>diagrams.aws.security.ResourceAccessManager</strong>, <strong>RAM</strong> (alias)</li>
+<li><strong>diagrams.aws.security.SecretsManager</strong></li>
+<li><strong>diagrams.aws.security.SecurityHubFinding</strong></li>
+<li><strong>diagrams.aws.security.SecurityHub</strong></li>
+<li><strong>diagrams.aws.security.SecurityIdentityAndCompliance</strong></li>
+<li><strong>diagrams.aws.security.ShieldAdvanced</strong></li>
+<li><strong>diagrams.aws.security.Shield</strong></li>
+<li><strong>diagrams.aws.security.SimpleAd</strong></li>
+<li><strong>diagrams.aws.security.SingleSignOn</strong></li>
+<li><strong>diagrams.aws.security.WAFFilteringRule</strong></li>
+<li><strong>diagrams.aws.security.WAF</strong></li>
+</ul>
+<h2 id="awsstorage">aws.storage</h2>
+<ul>
+<li><strong>diagrams.aws.storage.Backup</strong></li>
+<li><strong>diagrams.aws.storage.CloudendureDisasterRecovery</strong>, <strong>CDR</strong> (alias)</li>
+<li><strong>diagrams.aws.storage.EFSInfrequentaccessPrimaryBg</strong></li>
+<li><strong>diagrams.aws.storage.EFSStandardPrimaryBg</strong></li>
+<li><strong>diagrams.aws.storage.ElasticBlockStoreEBSSnapshot</strong></li>
+<li><strong>diagrams.aws.storage.ElasticBlockStoreEBSVolume</strong></li>
+<li><strong>diagrams.aws.storage.ElasticBlockStoreEBS</strong>, <strong>EBS</strong> (alias)</li>
+<li><strong>diagrams.aws.storage.ElasticFileSystemEFSFileSystem</strong></li>
+<li><strong>diagrams.aws.storage.ElasticFileSystemEFS</strong>, <strong>EFS</strong> (alias)</li>
+<li><strong>diagrams.aws.storage.FsxForLustre</strong></li>
+<li><strong>diagrams.aws.storage.FsxForWindowsFileServer</strong></li>
+<li><strong>diagrams.aws.storage.Fsx</strong>, <strong>FSx</strong> (alias)</li>
+<li><strong>diagrams.aws.storage.MultipleVolumesResource</strong></li>
+<li><strong>diagrams.aws.storage.S3GlacierArchive</strong></li>
+<li><strong>diagrams.aws.storage.S3GlacierVault</strong></li>
+<li><strong>diagrams.aws.storage.S3Glacier</strong></li>
+<li><strong>diagrams.aws.storage.SimpleStorageServiceS3BucketWithObjects</strong></li>
+<li><strong>diagrams.aws.storage.SimpleStorageServiceS3Bucket</strong></li>
+<li><strong>diagrams.aws.storage.SimpleStorageServiceS3Object</strong></li>
+<li><strong>diagrams.aws.storage.SimpleStorageServiceS3</strong>, <strong>S3</strong> (alias)</li>
+<li><strong>diagrams.aws.storage.SnowFamilySnowballImportExport</strong></li>
+<li><strong>diagrams.aws.storage.SnowballEdge</strong></li>
+<li><strong>diagrams.aws.storage.Snowball</strong></li>
+<li><strong>diagrams.aws.storage.Snowmobile</strong></li>
+<li><strong>diagrams.aws.storage.StorageGatewayCachedVolume</strong></li>
+<li><strong>diagrams.aws.storage.StorageGatewayNonCachedVolume</strong></li>
+<li><strong>diagrams.aws.storage.StorageGatewayVirtualTapeLibrary</strong></li>
+<li><strong>diagrams.aws.storage.StorageGateway</strong></li>
+<li><strong>diagrams.aws.storage.Storage</strong></li>
+</ul>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../digitalocean/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Digital Ocean" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Digital Ocean
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../elastic/" class="md-footer__link md-footer__link--next" aria-label="Next: Elastic" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Elastic
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>

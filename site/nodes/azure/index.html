@@ -1,0 +1,1225 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Azure - Diagrams</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ab47bd">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="purple" data-md-color-accent="blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#azureanalytics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Diagrams" class="md-header__button md-logo" aria-label="Diagrams" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diagrams
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Azure
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Diagrams" class="md-nav__button md-logo" aria-label="Diagrams" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Diagrams
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Nodes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Nodes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Nodes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generic/" class="md-nav__link">
+        Generic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oci/" class="md-nav__link">
+        OCI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../firebase/" class="md-nav__link">
+        Firebase
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../outscale/" class="md-nav__link">
+        Outscale
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alibabacloud/" class="md-nav__link">
+        Alibaba Cloud
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gcp/" class="md-nav__link">
+        GCP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom/" class="md-nav__link">
+        Custom
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Azure
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Azure
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#azureanalytics" class="md-nav__link">
+    azure.analytics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azurecompute" class="md-nav__link">
+    azure.compute
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azuredatabase" class="md-nav__link">
+    azure.database
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azuredevops" class="md-nav__link">
+    azure.devops
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azuregeneral" class="md-nav__link">
+    azure.general
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azureidentity" class="md-nav__link">
+    azure.identity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azureintegration" class="md-nav__link">
+    azure.integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azureiot" class="md-nav__link">
+    azure.iot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azuremigration" class="md-nav__link">
+    azure.migration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azureml" class="md-nav__link">
+    azure.ml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azuremobile" class="md-nav__link">
+    azure.mobile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azurenetwork" class="md-nav__link">
+    azure.network
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azuresecurity" class="md-nav__link">
+    azure.security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azurestorage" class="md-nav__link">
+    azure.storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azureweb" class="md-nav__link">
+    azure.web
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../k8s/" class="md-nav__link">
+        Kubernetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ibm/" class="md-nav__link">
+        IBM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../saas/" class="md-nav__link">
+        SAAS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../digitalocean/" class="md-nav__link">
+        Digital Ocean
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws/" class="md-nav__link">
+        AWS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elastic/" class="md-nav__link">
+        Elastic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programming/" class="md-nav__link">
+        Programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../onprem/" class="md-nav__link">
+        On Prem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../openstack/" class="md-nav__link">
+        Openstack
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/cluster/" class="md-nav__link">
+        Cluster
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/edge/" class="md-nav__link">
+        Edge
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/node/" class="md-nav__link">
+        Node
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/diagram/" class="md-nav__link">
+        Diagram
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#azureanalytics" class="md-nav__link">
+    azure.analytics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azurecompute" class="md-nav__link">
+    azure.compute
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azuredatabase" class="md-nav__link">
+    azure.database
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azuredevops" class="md-nav__link">
+    azure.devops
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azuregeneral" class="md-nav__link">
+    azure.general
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azureidentity" class="md-nav__link">
+    azure.identity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azureintegration" class="md-nav__link">
+    azure.integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azureiot" class="md-nav__link">
+    azure.iot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azuremigration" class="md-nav__link">
+    azure.migration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azureml" class="md-nav__link">
+    azure.ml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azuremobile" class="md-nav__link">
+    azure.mobile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azurenetwork" class="md-nav__link">
+    azure.network
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azuresecurity" class="md-nav__link">
+    azure.security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azurestorage" class="md-nav__link">
+    azure.storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azureweb" class="md-nav__link">
+    azure.web
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>Azure</h1>
+
+<p>Node classes list of azure provider.</p>
+<h2 id="azureanalytics">azure.analytics</h2>
+<ul>
+<li><strong>diagrams.azure.analytics.AnalysisServices</strong></li>
+<li><strong>diagrams.azure.analytics.DataExplorerClusters</strong></li>
+<li><strong>diagrams.azure.analytics.DataFactories</strong></li>
+<li><strong>diagrams.azure.analytics.DataLakeAnalytics</strong></li>
+<li><strong>diagrams.azure.analytics.DataLakeStoreGen1</strong></li>
+<li><strong>diagrams.azure.analytics.Databricks</strong></li>
+<li><strong>diagrams.azure.analytics.EventHubClusters</strong></li>
+<li><strong>diagrams.azure.analytics.EventHubs</strong></li>
+<li><strong>diagrams.azure.analytics.Hdinsightclusters</strong></li>
+<li><strong>diagrams.azure.analytics.LogAnalyticsWorkspaces</strong></li>
+<li><strong>diagrams.azure.analytics.StreamAnalyticsJobs</strong></li>
+<li><strong>diagrams.azure.analytics.SynapseAnalytics</strong></li>
+</ul>
+<h2 id="azurecompute">azure.compute</h2>
+<ul>
+<li><strong>diagrams.azure.compute.AppServices</strong></li>
+<li><strong>diagrams.azure.compute.AutomanagedVM</strong></li>
+<li><strong>diagrams.azure.compute.AvailabilitySets</strong></li>
+<li><strong>diagrams.azure.compute.BatchAccounts</strong></li>
+<li><strong>diagrams.azure.compute.CitrixVirtualDesktopsEssentials</strong></li>
+<li><strong>diagrams.azure.compute.CloudServicesClassic</strong></li>
+<li><strong>diagrams.azure.compute.CloudServices</strong></li>
+<li><strong>diagrams.azure.compute.CloudsimpleVirtualMachines</strong></li>
+<li><strong>diagrams.azure.compute.ContainerInstances</strong></li>
+<li><strong>diagrams.azure.compute.ContainerRegistries</strong>, <strong>ACR</strong> (alias)</li>
+<li><strong>diagrams.azure.compute.DiskEncryptionSets</strong></li>
+<li><strong>diagrams.azure.compute.DiskSnapshots</strong></li>
+<li><strong>diagrams.azure.compute.Disks</strong></li>
+<li><strong>diagrams.azure.compute.FunctionApps</strong></li>
+<li><strong>diagrams.azure.compute.ImageDefinitions</strong></li>
+<li><strong>diagrams.azure.compute.ImageVersions</strong></li>
+<li><strong>diagrams.azure.compute.KubernetesServices</strong>, <strong>AKS</strong> (alias)</li>
+<li><strong>diagrams.azure.compute.MeshApplications</strong></li>
+<li><strong>diagrams.azure.compute.OsImages</strong></li>
+<li><strong>diagrams.azure.compute.SAPHANAOnAzure</strong></li>
+<li><strong>diagrams.azure.compute.ServiceFabricClusters</strong></li>
+<li><strong>diagrams.azure.compute.SharedImageGalleries</strong></li>
+<li><strong>diagrams.azure.compute.SpringCloud</strong></li>
+<li><strong>diagrams.azure.compute.VMClassic</strong></li>
+<li><strong>diagrams.azure.compute.VMImages</strong></li>
+<li><strong>diagrams.azure.compute.VMLinux</strong></li>
+<li><strong>diagrams.azure.compute.VMScaleSet</strong>, <strong>VMSS</strong> (alias)</li>
+<li><strong>diagrams.azure.compute.VMWindows</strong></li>
+<li><strong>diagrams.azure.compute.VM</strong></li>
+<li><strong>diagrams.azure.compute.Workspaces</strong></li>
+</ul>
+<h2 id="azuredatabase">azure.database</h2>
+<ul>
+<li><strong>diagrams.azure.database.BlobStorage</strong></li>
+<li><strong>diagrams.azure.database.CacheForRedis</strong></li>
+<li><strong>diagrams.azure.database.CosmosDb</strong></li>
+<li><strong>diagrams.azure.database.DataExplorerClusters</strong></li>
+<li><strong>diagrams.azure.database.DataFactory</strong></li>
+<li><strong>diagrams.azure.database.DataLake</strong></li>
+<li><strong>diagrams.azure.database.DatabaseForMariadbServers</strong></li>
+<li><strong>diagrams.azure.database.DatabaseForMysqlServers</strong></li>
+<li><strong>diagrams.azure.database.DatabaseForPostgresqlServers</strong></li>
+<li><strong>diagrams.azure.database.ElasticDatabasePools</strong></li>
+<li><strong>diagrams.azure.database.ElasticJobAgents</strong></li>
+<li><strong>diagrams.azure.database.InstancePools</strong></li>
+<li><strong>diagrams.azure.database.ManagedDatabases</strong></li>
+<li><strong>diagrams.azure.database.SQLDatabases</strong></li>
+<li><strong>diagrams.azure.database.SQLDatawarehouse</strong></li>
+<li><strong>diagrams.azure.database.SQLManagedInstances</strong></li>
+<li><strong>diagrams.azure.database.SQLServerStretchDatabases</strong></li>
+<li><strong>diagrams.azure.database.SQLServers</strong></li>
+<li><strong>diagrams.azure.database.SQLVM</strong></li>
+<li><strong>diagrams.azure.database.SQL</strong></li>
+<li><strong>diagrams.azure.database.SsisLiftAndShiftIr</strong></li>
+<li><strong>diagrams.azure.database.SynapseAnalytics</strong></li>
+<li><strong>diagrams.azure.database.VirtualClusters</strong></li>
+<li><strong>diagrams.azure.database.VirtualDatacenter</strong></li>
+</ul>
+<h2 id="azuredevops">azure.devops</h2>
+<ul>
+<li><strong>diagrams.azure.devops.ApplicationInsights</strong></li>
+<li><strong>diagrams.azure.devops.Artifacts</strong></li>
+<li><strong>diagrams.azure.devops.Boards</strong></li>
+<li><strong>diagrams.azure.devops.Devops</strong></li>
+<li><strong>diagrams.azure.devops.DevtestLabs</strong></li>
+<li><strong>diagrams.azure.devops.LabServices</strong></li>
+<li><strong>diagrams.azure.devops.Pipelines</strong></li>
+<li><strong>diagrams.azure.devops.Repos</strong></li>
+<li><strong>diagrams.azure.devops.TestPlans</strong></li>
+</ul>
+<h2 id="azuregeneral">azure.general</h2>
+<ul>
+<li><strong>diagrams.azure.general.Allresources</strong></li>
+<li><strong>diagrams.azure.general.Azurehome</strong></li>
+<li><strong>diagrams.azure.general.Developertools</strong></li>
+<li><strong>diagrams.azure.general.Helpsupport</strong></li>
+<li><strong>diagrams.azure.general.Information</strong></li>
+<li><strong>diagrams.azure.general.Managementgroups</strong></li>
+<li><strong>diagrams.azure.general.Marketplace</strong></li>
+<li><strong>diagrams.azure.general.Quickstartcenter</strong></li>
+<li><strong>diagrams.azure.general.Recent</strong></li>
+<li><strong>diagrams.azure.general.Reservations</strong></li>
+<li><strong>diagrams.azure.general.Resource</strong></li>
+<li><strong>diagrams.azure.general.Resourcegroups</strong></li>
+<li><strong>diagrams.azure.general.Servicehealth</strong></li>
+<li><strong>diagrams.azure.general.Shareddashboard</strong></li>
+<li><strong>diagrams.azure.general.Subscriptions</strong></li>
+<li><strong>diagrams.azure.general.Support</strong></li>
+<li><strong>diagrams.azure.general.Supportrequests</strong></li>
+<li><strong>diagrams.azure.general.Tag</strong></li>
+<li><strong>diagrams.azure.general.Tags</strong></li>
+<li><strong>diagrams.azure.general.Templates</strong></li>
+<li><strong>diagrams.azure.general.Twousericon</strong></li>
+<li><strong>diagrams.azure.general.Userhealthicon</strong></li>
+<li><strong>diagrams.azure.general.Usericon</strong></li>
+<li><strong>diagrams.azure.general.Userprivacy</strong></li>
+<li><strong>diagrams.azure.general.Userresource</strong></li>
+<li><strong>diagrams.azure.general.Whatsnew</strong></li>
+</ul>
+<h2 id="azureidentity">azure.identity</h2>
+<ul>
+<li><strong>diagrams.azure.identity.AccessReview</strong></li>
+<li><strong>diagrams.azure.identity.ActiveDirectoryConnectHealth</strong></li>
+<li><strong>diagrams.azure.identity.ActiveDirectory</strong></li>
+<li><strong>diagrams.azure.identity.ADB2C</strong></li>
+<li><strong>diagrams.azure.identity.ADDomainServices</strong></li>
+<li><strong>diagrams.azure.identity.ADIdentityProtection</strong></li>
+<li><strong>diagrams.azure.identity.ADPrivilegedIdentityManagement</strong></li>
+<li><strong>diagrams.azure.identity.AppRegistrations</strong></li>
+<li><strong>diagrams.azure.identity.ConditionalAccess</strong></li>
+<li><strong>diagrams.azure.identity.EnterpriseApplications</strong></li>
+<li><strong>diagrams.azure.identity.Groups</strong></li>
+<li><strong>diagrams.azure.identity.IdentityGovernance</strong></li>
+<li><strong>diagrams.azure.identity.InformationProtection</strong></li>
+<li><strong>diagrams.azure.identity.ManagedIdentities</strong></li>
+<li><strong>diagrams.azure.identity.Users</strong></li>
+</ul>
+<h2 id="azureintegration">azure.integration</h2>
+<ul>
+<li><strong>diagrams.azure.integration.APIForFhir</strong></li>
+<li><strong>diagrams.azure.integration.APIManagement</strong></li>
+<li><strong>diagrams.azure.integration.AppConfiguration</strong></li>
+<li><strong>diagrams.azure.integration.DataCatalog</strong></li>
+<li><strong>diagrams.azure.integration.EventGridDomains</strong></li>
+<li><strong>diagrams.azure.integration.EventGridSubscriptions</strong></li>
+<li><strong>diagrams.azure.integration.EventGridTopics</strong></li>
+<li><strong>diagrams.azure.integration.IntegrationAccounts</strong></li>
+<li><strong>diagrams.azure.integration.IntegrationServiceEnvironments</strong></li>
+<li><strong>diagrams.azure.integration.LogicAppsCustomConnector</strong></li>
+<li><strong>diagrams.azure.integration.LogicApps</strong></li>
+<li><strong>diagrams.azure.integration.PartnerTopic</strong></li>
+<li><strong>diagrams.azure.integration.SendgridAccounts</strong></li>
+<li><strong>diagrams.azure.integration.ServiceBusRelays</strong></li>
+<li><strong>diagrams.azure.integration.ServiceBus</strong></li>
+<li><strong>diagrams.azure.integration.ServiceCatalogManagedApplicationDefinitions</strong></li>
+<li><strong>diagrams.azure.integration.SoftwareAsAService</strong></li>
+<li><strong>diagrams.azure.integration.StorsimpleDeviceManagers</strong></li>
+<li><strong>diagrams.azure.integration.SystemTopic</strong></li>
+</ul>
+<h2 id="azureiot">azure.iot</h2>
+<ul>
+<li><strong>diagrams.azure.iot.DeviceProvisioningServices</strong></li>
+<li><strong>diagrams.azure.iot.DigitalTwins</strong></li>
+<li><strong>diagrams.azure.iot.IotCentralApplications</strong></li>
+<li><strong>diagrams.azure.iot.IotHubSecurity</strong></li>
+<li><strong>diagrams.azure.iot.IotHub</strong></li>
+<li><strong>diagrams.azure.iot.Maps</strong></li>
+<li><strong>diagrams.azure.iot.Sphere</strong></li>
+<li><strong>diagrams.azure.iot.TimeSeriesInsightsEnvironments</strong></li>
+<li><strong>diagrams.azure.iot.TimeSeriesInsightsEventsSources</strong></li>
+<li><strong>diagrams.azure.iot.Windows10IotCoreServices</strong></li>
+</ul>
+<h2 id="azuremigration">azure.migration</h2>
+<ul>
+<li><strong>diagrams.azure.migration.DataBoxEdge</strong></li>
+<li><strong>diagrams.azure.migration.DataBox</strong></li>
+<li><strong>diagrams.azure.migration.DatabaseMigrationServices</strong></li>
+<li><strong>diagrams.azure.migration.MigrationProjects</strong></li>
+<li><strong>diagrams.azure.migration.RecoveryServicesVaults</strong></li>
+</ul>
+<h2 id="azureml">azure.ml</h2>
+<ul>
+<li><strong>diagrams.azure.ml.BatchAI</strong></li>
+<li><strong>diagrams.azure.ml.BotServices</strong></li>
+<li><strong>diagrams.azure.ml.CognitiveServices</strong></li>
+<li><strong>diagrams.azure.ml.GenomicsAccounts</strong></li>
+<li><strong>diagrams.azure.ml.MachineLearningServiceWorkspaces</strong></li>
+<li><strong>diagrams.azure.ml.MachineLearningStudioWebServicePlans</strong></li>
+<li><strong>diagrams.azure.ml.MachineLearningStudioWebServices</strong></li>
+<li><strong>diagrams.azure.ml.MachineLearningStudioWorkspaces</strong></li>
+</ul>
+<h2 id="azuremobile">azure.mobile</h2>
+<ul>
+<li><strong>diagrams.azure.mobile.AppServiceMobile</strong></li>
+<li><strong>diagrams.azure.mobile.MobileEngagement</strong></li>
+<li><strong>diagrams.azure.mobile.NotificationHubs</strong></li>
+</ul>
+<h2 id="azurenetwork">azure.network</h2>
+<ul>
+<li><strong>diagrams.azure.network.ApplicationGateway</strong></li>
+<li><strong>diagrams.azure.network.ApplicationSecurityGroups</strong></li>
+<li><strong>diagrams.azure.network.CDNProfiles</strong></li>
+<li><strong>diagrams.azure.network.Connections</strong></li>
+<li><strong>diagrams.azure.network.DDOSProtectionPlans</strong></li>
+<li><strong>diagrams.azure.network.DNSPrivateZones</strong></li>
+<li><strong>diagrams.azure.network.DNSZones</strong></li>
+<li><strong>diagrams.azure.network.ExpressrouteCircuits</strong></li>
+<li><strong>diagrams.azure.network.Firewall</strong></li>
+<li><strong>diagrams.azure.network.FrontDoors</strong></li>
+<li><strong>diagrams.azure.network.LoadBalancers</strong></li>
+<li><strong>diagrams.azure.network.LocalNetworkGateways</strong></li>
+<li><strong>diagrams.azure.network.NetworkInterfaces</strong></li>
+<li><strong>diagrams.azure.network.NetworkSecurityGroupsClassic</strong></li>
+<li><strong>diagrams.azure.network.NetworkWatcher</strong></li>
+<li><strong>diagrams.azure.network.OnPremisesDataGateways</strong></li>
+<li><strong>diagrams.azure.network.PublicIpAddresses</strong></li>
+<li><strong>diagrams.azure.network.ReservedIpAddressesClassic</strong></li>
+<li><strong>diagrams.azure.network.RouteFilters</strong></li>
+<li><strong>diagrams.azure.network.RouteTables</strong></li>
+<li><strong>diagrams.azure.network.ServiceEndpointPolicies</strong></li>
+<li><strong>diagrams.azure.network.Subnets</strong></li>
+<li><strong>diagrams.azure.network.TrafficManagerProfiles</strong></li>
+<li><strong>diagrams.azure.network.VirtualNetworkClassic</strong></li>
+<li><strong>diagrams.azure.network.VirtualNetworkGateways</strong></li>
+<li><strong>diagrams.azure.network.VirtualNetworks</strong></li>
+<li><strong>diagrams.azure.network.VirtualWans</strong></li>
+</ul>
+<h2 id="azuresecurity">azure.security</h2>
+<ul>
+<li><strong>diagrams.azure.security.ApplicationSecurityGroups</strong></li>
+<li><strong>diagrams.azure.security.ConditionalAccess</strong></li>
+<li><strong>diagrams.azure.security.Defender</strong></li>
+<li><strong>diagrams.azure.security.ExtendedSecurityUpdates</strong></li>
+<li><strong>diagrams.azure.security.KeyVaults</strong></li>
+<li><strong>diagrams.azure.security.SecurityCenter</strong></li>
+<li><strong>diagrams.azure.security.Sentinel</strong></li>
+</ul>
+<h2 id="azurestorage">azure.storage</h2>
+<ul>
+<li><strong>diagrams.azure.storage.ArchiveStorage</strong></li>
+<li><strong>diagrams.azure.storage.Azurefxtedgefiler</strong></li>
+<li><strong>diagrams.azure.storage.BlobStorage</strong></li>
+<li><strong>diagrams.azure.storage.DataBoxEdgeDataBoxGateway</strong></li>
+<li><strong>diagrams.azure.storage.DataBox</strong></li>
+<li><strong>diagrams.azure.storage.DataLakeStorage</strong></li>
+<li><strong>diagrams.azure.storage.GeneralStorage</strong></li>
+<li><strong>diagrams.azure.storage.NetappFiles</strong></li>
+<li><strong>diagrams.azure.storage.QueuesStorage</strong></li>
+<li><strong>diagrams.azure.storage.StorageAccountsClassic</strong></li>
+<li><strong>diagrams.azure.storage.StorageAccounts</strong></li>
+<li><strong>diagrams.azure.storage.StorageExplorer</strong></li>
+<li><strong>diagrams.azure.storage.StorageSyncServices</strong></li>
+<li><strong>diagrams.azure.storage.StorsimpleDataManagers</strong></li>
+<li><strong>diagrams.azure.storage.StorsimpleDeviceManagers</strong></li>
+<li><strong>diagrams.azure.storage.TableStorage</strong></li>
+</ul>
+<h2 id="azureweb">azure.web</h2>
+<ul>
+<li><strong>diagrams.azure.web.APIConnections</strong></li>
+<li><strong>diagrams.azure.web.AppServiceCertificates</strong></li>
+<li><strong>diagrams.azure.web.AppServiceDomains</strong></li>
+<li><strong>diagrams.azure.web.AppServiceEnvironments</strong></li>
+<li><strong>diagrams.azure.web.AppServicePlans</strong></li>
+<li><strong>diagrams.azure.web.AppServices</strong></li>
+<li><strong>diagrams.azure.web.MediaServices</strong></li>
+<li><strong>diagrams.azure.web.NotificationHubNamespaces</strong></li>
+<li><strong>diagrams.azure.web.Search</strong></li>
+<li><strong>diagrams.azure.web.Signalr</strong></li>
+</ul>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../custom/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Custom" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Custom
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../k8s/" class="md-footer__link md-footer__link--next" aria-label="Next: Kubernetes" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Kubernetes
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>

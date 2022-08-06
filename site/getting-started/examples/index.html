@@ -1,0 +1,1104 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Examples - Diagrams</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ab47bd">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="purple" data-md-color-accent="blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#grouped-workers-on-aws" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Diagrams" class="md-header__button md-logo" aria-label="Diagrams" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diagrams
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Examples
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Diagrams" class="md-nav__button md-logo" aria-label="Diagrams" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Diagrams
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Examples
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Examples
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grouped-workers-on-aws" class="md-nav__link">
+    Grouped Workers on AWS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clustered-web-services" class="md-nav__link">
+    Clustered Web Services
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-processing-on-aws" class="md-nav__link">
+    Event Processing on AWS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-collecting-system-on-gcp" class="md-nav__link">
+    Message Collecting System on GCP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exposed-pod-with-3-replicas-on-kubernetes" class="md-nav__link">
+    Exposed Pod with 3 Replicas on Kubernetes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stateful-architecture-on-kubernetes" class="md-nav__link">
+    Stateful Architecture on Kubernetes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-web-service-with-on-premise" class="md-nav__link">
+    Advanced Web Service with On-Premise
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-web-service-with-on-premise-with-colors-and-labels" class="md-nav__link">
+    Advanced Web Service with On-Premise (with colors and labels)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rabbitmq-consumers-with-custom-nodes" class="md-nav__link">
+    RabbitMQ Consumers with Custom Nodes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Nodes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Nodes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Nodes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/generic/" class="md-nav__link">
+        Generic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/oci/" class="md-nav__link">
+        OCI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/firebase/" class="md-nav__link">
+        Firebase
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/outscale/" class="md-nav__link">
+        Outscale
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/alibabacloud/" class="md-nav__link">
+        Alibaba Cloud
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/gcp/" class="md-nav__link">
+        GCP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/custom/" class="md-nav__link">
+        Custom
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/azure/" class="md-nav__link">
+        Azure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/k8s/" class="md-nav__link">
+        Kubernetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/ibm/" class="md-nav__link">
+        IBM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/saas/" class="md-nav__link">
+        SAAS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/digitalocean/" class="md-nav__link">
+        Digital Ocean
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/aws/" class="md-nav__link">
+        AWS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/elastic/" class="md-nav__link">
+        Elastic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/programming/" class="md-nav__link">
+        Programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/onprem/" class="md-nav__link">
+        On Prem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodes/openstack/" class="md-nav__link">
+        Openstack
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/cluster/" class="md-nav__link">
+        Cluster
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/edge/" class="md-nav__link">
+        Edge
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/node/" class="md-nav__link">
+        Node
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/diagram/" class="md-nav__link">
+        Diagram
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grouped-workers-on-aws" class="md-nav__link">
+    Grouped Workers on AWS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clustered-web-services" class="md-nav__link">
+    Clustered Web Services
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-processing-on-aws" class="md-nav__link">
+    Event Processing on AWS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-collecting-system-on-gcp" class="md-nav__link">
+    Message Collecting System on GCP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exposed-pod-with-3-replicas-on-kubernetes" class="md-nav__link">
+    Exposed Pod with 3 Replicas on Kubernetes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stateful-architecture-on-kubernetes" class="md-nav__link">
+    Stateful Architecture on Kubernetes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-web-service-with-on-premise" class="md-nav__link">
+    Advanced Web Service with On-Premise
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-web-service-with-on-premise-with-colors-and-labels" class="md-nav__link">
+    Advanced Web Service with On-Premise (with colors and labels)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rabbitmq-consumers-with-custom-nodes" class="md-nav__link">
+    RabbitMQ Consumers with Custom Nodes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>Examples</h1>
+
+<p>Here are some more examples.</p>
+<h2 id="grouped-workers-on-aws">Grouped Workers on AWS</h2>
+<pre><code class="language-python">from diagrams import Diagram
+from diagrams.aws.compute import EC2
+from diagrams.aws.database import RDS
+from diagrams.aws.network import ELB
+
+with Diagram(&quot;Grouped Workers&quot;, show=False, direction=&quot;TB&quot;):
+    ELB(&quot;lb&quot;) &gt;&gt; [EC2(&quot;worker1&quot;),
+                  EC2(&quot;worker2&quot;),
+                  EC2(&quot;worker3&quot;),
+                  EC2(&quot;worker4&quot;),
+                  EC2(&quot;worker5&quot;)] &gt;&gt; RDS(&quot;events&quot;)
+</code></pre>
+<p><img alt="grouped workers diagram" src="/img/grouped_workers_diagram.png" /></p>
+<h2 id="clustered-web-services">Clustered Web Services</h2>
+<pre><code class="language-python">from diagrams import Cluster, Diagram
+from diagrams.aws.compute import ECS
+from diagrams.aws.database import ElastiCache, RDS
+from diagrams.aws.network import ELB
+from diagrams.aws.network import Route53
+
+with Diagram(&quot;Clustered Web Services&quot;, show=False):
+    dns = Route53(&quot;dns&quot;)
+    lb = ELB(&quot;lb&quot;)
+
+    with Cluster(&quot;Services&quot;):
+        svc_group = [ECS(&quot;web1&quot;),
+                     ECS(&quot;web2&quot;),
+                     ECS(&quot;web3&quot;)]
+
+    with Cluster(&quot;DB Cluster&quot;):
+        db_primary = RDS(&quot;userdb&quot;)
+        db_primary - [RDS(&quot;userdb ro&quot;)]
+
+    memcached = ElastiCache(&quot;memcached&quot;)
+
+    dns &gt;&gt; lb &gt;&gt; svc_group
+    svc_group &gt;&gt; db_primary
+    svc_group &gt;&gt; memcached
+</code></pre>
+<p><img alt="clustered web services diagram" src="/img/clustered_web_services_diagram.png" /></p>
+<h2 id="event-processing-on-aws">Event Processing on AWS</h2>
+<pre><code class="language-python">from diagrams import Cluster, Diagram
+from diagrams.aws.compute import ECS, EKS, Lambda
+from diagrams.aws.database import Redshift
+from diagrams.aws.integration import SQS
+from diagrams.aws.storage import S3
+
+with Diagram(&quot;Event Processing&quot;, show=False):
+    source = EKS(&quot;k8s source&quot;)
+
+    with Cluster(&quot;Event Flows&quot;):
+        with Cluster(&quot;Event Workers&quot;):
+            workers = [ECS(&quot;worker1&quot;),
+                       ECS(&quot;worker2&quot;),
+                       ECS(&quot;worker3&quot;)]
+
+        queue = SQS(&quot;event queue&quot;)
+
+        with Cluster(&quot;Processing&quot;):
+            handlers = [Lambda(&quot;proc1&quot;),
+                        Lambda(&quot;proc2&quot;),
+                        Lambda(&quot;proc3&quot;)]
+
+    store = S3(&quot;events store&quot;)
+    dw = Redshift(&quot;analytics&quot;)
+
+    source &gt;&gt; workers &gt;&gt; queue &gt;&gt; handlers
+    handlers &gt;&gt; store
+    handlers &gt;&gt; dw
+</code></pre>
+<p><img alt="event processing diagram" src="/img/event_processing_diagram.png" /></p>
+<h2 id="message-collecting-system-on-gcp">Message Collecting System on GCP</h2>
+<pre><code class="language-python">from diagrams import Cluster, Diagram
+from diagrams.gcp.analytics import BigQuery, Dataflow, PubSub
+from diagrams.gcp.compute import AppEngine, Functions
+from diagrams.gcp.database import BigTable
+from diagrams.gcp.iot import IotCore
+from diagrams.gcp.storage import GCS
+
+with Diagram(&quot;Message Collecting&quot;, show=False):
+    pubsub = PubSub(&quot;pubsub&quot;)
+
+    with Cluster(&quot;Source of Data&quot;):
+        [IotCore(&quot;core1&quot;),
+         IotCore(&quot;core2&quot;),
+         IotCore(&quot;core3&quot;)] &gt;&gt; pubsub
+
+    with Cluster(&quot;Targets&quot;):
+        with Cluster(&quot;Data Flow&quot;):
+            flow = Dataflow(&quot;data flow&quot;)
+
+        with Cluster(&quot;Data Lake&quot;):
+            flow &gt;&gt; [BigQuery(&quot;bq&quot;),
+                     GCS(&quot;storage&quot;)]
+
+        with Cluster(&quot;Event Driven&quot;):
+            with Cluster(&quot;Processing&quot;):
+                flow &gt;&gt; AppEngine(&quot;engine&quot;) &gt;&gt; BigTable(&quot;bigtable&quot;)
+
+            with Cluster(&quot;Serverless&quot;):
+                flow &gt;&gt; Functions(&quot;func&quot;) &gt;&gt; AppEngine(&quot;appengine&quot;)
+
+    pubsub &gt;&gt; flow
+</code></pre>
+<p><img alt="message collecting diagram" src="/img/message_collecting_diagram.png" /></p>
+<h2 id="exposed-pod-with-3-replicas-on-kubernetes">Exposed Pod with 3 Replicas on Kubernetes</h2>
+<pre><code class="language-python">from diagrams import Diagram
+from diagrams.k8s.clusterconfig import HPA
+from diagrams.k8s.compute import Deployment, Pod, ReplicaSet
+from diagrams.k8s.network import Ingress, Service
+
+with Diagram(&quot;Exposed Pod with 3 Replicas&quot;, show=False):
+    net = Ingress(&quot;domain.com&quot;) &gt;&gt; Service(&quot;svc&quot;)
+    net &gt;&gt; [Pod(&quot;pod1&quot;),
+            Pod(&quot;pod2&quot;),
+            Pod(&quot;pod3&quot;)] &lt;&lt; ReplicaSet(&quot;rs&quot;) &lt;&lt; Deployment(&quot;dp&quot;) &lt;&lt; HPA(&quot;hpa&quot;)
+
+</code></pre>
+<p><img alt="exposed pod with 3 replicas diagram" src="/img/exposed_pod_with_3_replicas_diagram.png" /></p>
+<h2 id="stateful-architecture-on-kubernetes">Stateful Architecture on Kubernetes</h2>
+<pre><code class="language-python">from diagrams import Cluster, Diagram
+from diagrams.k8s.compute import Pod, StatefulSet
+from diagrams.k8s.network import Service
+from diagrams.k8s.storage import PV, PVC, StorageClass
+
+with Diagram(&quot;Stateful Architecture&quot;, show=False):
+    with Cluster(&quot;Apps&quot;):
+        svc = Service(&quot;svc&quot;)
+        sts = StatefulSet(&quot;sts&quot;)
+
+        apps = []
+        for _ in range(3):
+            pod = Pod(&quot;pod&quot;)
+            pvc = PVC(&quot;pvc&quot;)
+            pod - sts - pvc
+            apps.append(svc &gt;&gt; pod &gt;&gt; pvc)
+
+    apps &lt;&lt; PV(&quot;pv&quot;) &lt;&lt; StorageClass(&quot;sc&quot;)
+</code></pre>
+<p><img alt="stateful architecture diagram" src="/img/stateful_architecture_diagram.png" /></p>
+<h2 id="advanced-web-service-with-on-premise">Advanced Web Service with On-Premise</h2>
+<pre><code class="language-python">from diagrams import Cluster, Diagram
+from diagrams.onprem.analytics import Spark
+from diagrams.onprem.compute import Server
+from diagrams.onprem.database import PostgreSQL
+from diagrams.onprem.inmemory import Redis
+from diagrams.onprem.aggregator import Fluentd
+from diagrams.onprem.monitoring import Grafana, Prometheus
+from diagrams.onprem.network import Nginx
+from diagrams.onprem.queue import Kafka
+
+with Diagram(&quot;Advanced Web Service with On-Premise&quot;, show=False):
+    ingress = Nginx(&quot;ingress&quot;)
+
+    metrics = Prometheus(&quot;metric&quot;)
+    metrics &lt;&lt; Grafana(&quot;monitoring&quot;)
+
+    with Cluster(&quot;Service Cluster&quot;):
+        grpcsvc = [
+            Server(&quot;grpc1&quot;),
+            Server(&quot;grpc2&quot;),
+            Server(&quot;grpc3&quot;)]
+
+    with Cluster(&quot;Sessions HA&quot;):
+        primary = Redis(&quot;session&quot;)
+        primary - Redis(&quot;replica&quot;) &lt;&lt; metrics
+        grpcsvc &gt;&gt; primary
+
+    with Cluster(&quot;Database HA&quot;):
+        primary = PostgreSQL(&quot;users&quot;)
+        primary - PostgreSQL(&quot;replica&quot;) &lt;&lt; metrics
+        grpcsvc &gt;&gt; primary
+
+    aggregator = Fluentd(&quot;logging&quot;)
+    aggregator &gt;&gt; Kafka(&quot;stream&quot;) &gt;&gt; Spark(&quot;analytics&quot;)
+
+    ingress &gt;&gt; grpcsvc &gt;&gt; aggregator
+</code></pre>
+<p><img alt="advanced web service with on-premise diagram" src="/img/advanced_web_service_with_on-premise.png" /></p>
+<h2 id="advanced-web-service-with-on-premise-with-colors-and-labels">Advanced Web Service with On-Premise (with colors and labels)</h2>
+<pre><code class="language-python">from diagrams import Cluster, Diagram, Edge
+from diagrams.onprem.analytics import Spark
+from diagrams.onprem.compute import Server
+from diagrams.onprem.database import PostgreSQL
+from diagrams.onprem.inmemory import Redis
+from diagrams.onprem.aggregator import Fluentd
+from diagrams.onprem.monitoring import Grafana, Prometheus
+from diagrams.onprem.network import Nginx
+from diagrams.onprem.queue import Kafka
+
+with Diagram(name=&quot;Advanced Web Service with On-Premise (colored)&quot;, show=False):
+    ingress = Nginx(&quot;ingress&quot;)
+
+    metrics = Prometheus(&quot;metric&quot;)
+    metrics &lt;&lt; Edge(color=&quot;firebrick&quot;, style=&quot;dashed&quot;) &lt;&lt; Grafana(&quot;monitoring&quot;)
+
+    with Cluster(&quot;Service Cluster&quot;):
+        grpcsvc = [
+            Server(&quot;grpc1&quot;),
+            Server(&quot;grpc2&quot;),
+            Server(&quot;grpc3&quot;)]
+
+    with Cluster(&quot;Sessions HA&quot;):
+        primary = Redis(&quot;session&quot;)
+        primary - Edge(color=&quot;brown&quot;, style=&quot;dashed&quot;) - Redis(&quot;replica&quot;) &lt;&lt; Edge(label=&quot;collect&quot;) &lt;&lt; metrics
+        grpcsvc &gt;&gt; Edge(color=&quot;brown&quot;) &gt;&gt; primary
+
+    with Cluster(&quot;Database HA&quot;):
+        primary = PostgreSQL(&quot;users&quot;)
+        primary - Edge(color=&quot;brown&quot;, style=&quot;dotted&quot;) - PostgreSQL(&quot;replica&quot;) &lt;&lt; Edge(label=&quot;collect&quot;) &lt;&lt; metrics
+        grpcsvc &gt;&gt; Edge(color=&quot;black&quot;) &gt;&gt; primary
+
+    aggregator = Fluentd(&quot;logging&quot;)
+    aggregator &gt;&gt; Edge(label=&quot;parse&quot;) &gt;&gt; Kafka(&quot;stream&quot;) &gt;&gt; Edge(color=&quot;black&quot;, style=&quot;bold&quot;) &gt;&gt; Spark(&quot;analytics&quot;)
+
+    ingress &gt;&gt; Edge(color=&quot;darkgreen&quot;) &lt;&lt; grpcsvc &gt;&gt; Edge(color=&quot;darkorange&quot;) &gt;&gt; aggregator
+</code></pre>
+<p><img alt="advanced web service with on-premise diagram colored" src="/img/advanced_web_service_with_on-premise_colored.png" /></p>
+<h2 id="rabbitmq-consumers-with-custom-nodes">RabbitMQ Consumers with Custom Nodes</h2>
+<pre><code class="language-python">from urllib.request import urlretrieve
+
+from diagrams import Cluster, Diagram
+from diagrams.aws.database import Aurora
+from diagrams.custom import Custom
+from diagrams.k8s.compute import Pod
+
+# Download an image to be used into a Custom Node class
+rabbitmq_url = &quot;https://jpadilla.github.io/rabbitmqapp/assets/img/icon.png&quot;
+rabbitmq_icon = &quot;rabbitmq.png&quot;
+urlretrieve(rabbitmq_url, rabbitmq_icon)
+
+with Diagram(&quot;Broker Consumers&quot;, show=False):
+    with Cluster(&quot;Consumers&quot;):
+        consumers = [
+            Pod(&quot;worker&quot;),
+            Pod(&quot;worker&quot;),
+            Pod(&quot;worker&quot;)]
+
+    queue = Custom(&quot;Message queue&quot;, rabbitmq_icon)
+
+    queue &gt;&gt; consumers &gt;&gt; Aurora(&quot;Database&quot;)
+</code></pre>
+<p><img alt="rabbitmq consumers diagram" src="/img/rabbitmq_consumers_diagram.png" /></p>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+      
+        
+        <a href="../installation/" class="md-footer__link md-footer__link--next" aria-label="Next: Installation" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Installation
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
